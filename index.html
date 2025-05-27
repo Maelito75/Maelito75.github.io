@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+    <html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Triathlon Ardèche - Supportons Salomé et Madeline</title>
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+
+    <body>
+        <header class="logo">
+            <img src="Images/logo.png" alt="Logo du site">
+            <span class="bandeau"></span>
+        </header>   
+        
+        <label class="hamburger-menu">
+            <input type="checkbox" />
+        </label>
+
+        <aside class="sidebar">
+            <nav>
+                <li><a href="index.html">Accueil</a></li><br>
+                <li><a href="index.html">Rbnb</a></li><br>
+                <li><a href="index.html">Trajet</a></li><br>
+                <li><a href="index.html">Supporters</a></li><br>
+            </nav>
+        </aside>
+
+        <section class="Bienvenue">
+            <div class="content">
+                <img src="Images/Vidéo sans titre ‐ Réalisée avec Clipchamp.gif " alt="GIF coucou">
+                <h2>
+                    <span class = "Début">BIENVENUE <br>SUR LA PAGE DU</span><br>
+                    <span class = "Fin">SALMAD FAN <br>CLUB 2025 !</span>
+                </h2>
+            </div>
+        </section>
+
+        <script>
+            const checkbox = document.querySelector('.hamburger-menu input');
+            const content = document.querySelector('.content');
+
+            checkbox.addEventListener('change', () => {
+                if (checkbox.checked) {
+                content.classList.add('menu-open');
+                } else {
+                content.classList.remove('menu-open');
+                }
+            });
+        </script>
+
+        <section class="Timer-tri">
+            <div class="Timer">
+                <!-- <h1>Triathlon des gorges de l'Ardèche</h1> -->
+                <div class="timebox">
+                    <div class="time">
+                        <h2 id="days">00</h2>
+                        <p>Jours</p>
+                    </div>
+                    <div class="time">
+                        <h2 id="hours">00</h2>
+                        <p>Heures</p>
+                    </div>
+                    <div class="time">
+                        <h2 id="minutes">00</h2>
+                        <p>Minutes</p>
+                    </div>
+                    <div class="time">
+                        <h2 id="seconds">00</h2>
+                        <p>Secondes</p>
+                    </div>  
+            </div>
+        </section>
+
+        <script src="script.js"></script>
+    </body>
+</html>
