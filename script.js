@@ -4,7 +4,7 @@ const Minutes = document.getElementById('minutes');
 const Seconds = document.getElementById('seconds');
 
 const targetDate = new Date('July 3, 2025 19:30:00').getTime();
-function timer() {
+function minuteur() {
     const now = new Date().getTime();
     const distance = targetDate - now;
 
@@ -24,4 +24,4 @@ function timer() {
     }
 }
 
-setInterval(timer, 1000);
+setInterval(minuteur, 1000);

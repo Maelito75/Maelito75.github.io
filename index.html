@@ -9,7 +9,7 @@
 
     <body>
         <header class="logo">
-            <img src="Images/logo.png" alt="Logo du site">
+            <img id="logo-img" src="Images/logo.png" alt="Logo du site">
             <span class="bandeau"></span>
         </header>   
         
@@ -29,27 +29,17 @@
         <section class="Bienvenue">
             <div class="content">
                 <img src="Images/Vidéo sans titre ‐ Réalisée avec Clipchamp.gif " alt="GIF coucou">
-                <h2>
+                <h2 id="texte-bienvenue">
                     <span class = "Début">BIENVENUE <br>SUR LA PAGE DU</span><br>
                     <span class = "Fin">SALMAD FAN <br>CLUB 2025 !</span>
                 </h2>
             </div>
         </section>
 
-        <script>
-            const checkbox = document.querySelector('.hamburger-menu input');
-            const content = document.querySelector('.content');
-
-            checkbox.addEventListener('change', () => {
-                if (checkbox.checked) {
-                content.classList.add('menu-open');
-                } else {
-                content.classList.remove('menu-open');
-                }
-            });
-        </script>
-
         <section class="Timer-tri">
+            <div class="dessin-tri">
+                <img src="Images/Fond dessin.jpeg" alt="Dessin triathlon">
+            </div>
             <div class="Timer">
                 <!-- <h1>Triathlon des gorges de l'Ardèche</h1> -->
                 <div class="timebox">
@@ -71,7 +61,8 @@
                     </div>  
             </div>
         </section>
+        <script src="menu.js" defer></script>
+        <script src="script.js" defer></script>
 
-        <script src="script.js"></script>
     </body>
 </html>
