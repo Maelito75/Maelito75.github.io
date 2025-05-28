@@ -84,8 +84,8 @@ body {
   }
 
   .hamburger-menu.hamburger-menu:has(input:checked){
-  --foreground: #ffffff;
-  --background: #ffffff;
+    --foreground: #ffffff;
+    --background: #ffffff;
   }
 
   .hamburger-menu::before,
@@ -162,181 +162,51 @@ body {
   }
 
   /*Section BIENVENUE */
-  section.Bienvenue {
-    z-index: 0;
-    position:relative;
-    z-index: 999;
-    margin: 0;
-    top:60px;
-    display: flex;
-    margin: 0;
+  .Supporters{
+    position: relative;
     width: 100%;
-    align-items: center;
-    height: 600px;
-    justify-content: center;
-    background-image: url('../Images/GIF2.gif');
-    background-repeat: no-repeat;
+    background-image: url(/Images/Supporter.png);
     background-size: cover;
-    background-position: center;
+    background-position:top center;
+    height: 1000px;
   }
-
-  div.Timer {
-    display: flex;
-    width: 90%;
-    margin:auto;
-    margin-top: 10px;
-    box-sizing: border-box;
-    font-family: "Bank Gothic";
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .timebox {
-    display: flex;
-    align-items: center;
-    margin:0;
-    gap:40px;
-  }
-
-  .time{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-  }  
-  .time h2,
-  .time p {
-    margin: 0;
-  }
-
-  .time h2 {
-    font-size: 40px;
-    font-weight: 10;
-    color: #51d4fc;
-    justify-content: space-between;
-  }
-  .time p {
-    margin: 0;
-    font-size: 10px;
-    font-weight: 50;
-    color: #ffffff;
-  }
-  .texte {
+  
+  .Supporters h2{
     position: absolute;
-    margin: 0;
-    bottom: -20%;
+    margin-top: 70px;
+    max-width: 90%;
+    left:50%;
+    transform: translate(-50%, 0);
     text-align: center;
-    max-width: 60%;
+    color: white;
+    width: 100%;
+    font-size: 40px;
   }
 
-  #Début{
-    color: #ffffff;
-    gap: 1px;
-  }
-  #Fin{
-    margin-top: 1%;
-    font-weight: 1000;
-    color: #fe9162;
+  .Supporters h3{
+    position: absolute;
+    bottom: 0;
+    color: white;
+    width: 100%;
+    text-align: center;
+    font-size: 40px;
   }
 
-  .Bienvenue {
+
+  /* .Bienvenue {
       transition: var(--animation-timing);
   }
   .Bienvenue.menu-open {
     transform: translateX(20%);
   }
 
-  /* .Bienvenue h2{
-    text-align: center;
-    padding-left: 5%;
-    width: auto;
-    font-size: auto;
-  }
-  .Début{ 
-    color: #fe9162;
-    text-align: center;
-  }
-  .Fin{
-    font-weight: 1000;
-    color: #16bfd6;
-  } */
-
   div.content {
     transition: var(--animation-timing);
   }
   .content.menu-open {
     transform: scale(1) translateX(calc(var(--shape-width)*0.5));
-  }
 
-  /*Timer triathlon*/
-
-  /* section.Timer-tri{
-    display: flex;
-    position: absolute;
-    width: 80%;
-    height: auto;
-    top: 60%;
-    margin-left: 70px;
-  }
-
-  div.dessin-tri img{
-    width: 100%;
-    margin-top: 4%;
-  }
-  .dessin-tri {
-      transition: var(--animation-timing);
-  }
-  .dessin-tri.menu-open {
-    transform: scale(0.8) translateX(calc(var(--shape-width)*0.6)) translateY(-10%);
-  }
-
-  div.Timer {
-    display: flex;
-    position: absolute;
-    /* margin-top: 20px; */
-    /* box-sizing: border-box;
-    font-family: "Bank Gothic";
-    flex-direction: column;
-    align-items: center;
-    justify-content:first baseline;
-    margin-left: 2%;
-  }
-
-  .timebox {
-    display: flex;
-    gap: 20%;
-    align-items: center;
-  }
-
-  .time{
-    display: flex;
-    flex-direction: column;
-  }  
-  .time h2,
-  .time p {
-    margin: 0;
-  }
-
-  .time h2 {
-    font-size: 25px;
-    font-weight: 10;
-  }
-  .time p {
-    margin: 0;
-    font-size: 10px;
-    font-weight: 50;
-  }
-    .Timer {
-      transition: var(--animation-timing);
-  }
-  .Timer.menu-open {
-    transform: translateX(40%) translateY(10%);
-  } */
-
-/* } */
-
-
-
+}
 
 
 
