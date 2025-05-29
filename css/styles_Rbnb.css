@@ -12,9 +12,6 @@ body {
 }
 
  /* ------------------------------------------------------------------------------------------------- */
-/* Version mobile */
-/* @media screen and (max-width: 599px) { */
-  /* Variables */
   :root {
   --shape-width: 35%;  
   --bar-width: 40px;

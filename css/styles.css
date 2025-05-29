@@ -57,6 +57,7 @@ body {
     width: 100%;
   }
 
+
   #logo-img {
     transition: var(--animation-timing);
   }
@@ -188,7 +189,6 @@ body {
     opacity: 0.3;
     translate: -100%;
   }
-
  
   .cache-noir.menu-open {
     translate: 0;
