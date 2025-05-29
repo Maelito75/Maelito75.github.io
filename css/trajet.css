@@ -49,19 +49,24 @@ body {
     z-index: 1001;
   }
 
-  .bandeau img {
+  .bandeau a {
     width: 35%;
     max-width: 200px;
     height: auto;
     z-index: 1001;
   }
 
+  .bandeau img {
+    width: 100%;
+  }
+
+
   #logo-img {
     transition: var(--animation-timing);
   }
 
   #logo-img.menu-open {
-    transform: translateX(30%);
+    transform: translateX(calc(100vw*0.175));
   }
 
 
@@ -155,9 +160,40 @@ body {
     list-style: none;
     color: white;
     text-decoration: none;
+    height:45px;
+    align-items: center;
+    margin:0;
+    padding:0;
+  }
+
+  .sidebar li a::before {
+    content: "";
+    position: absolute;
+    background-color: #8a8a8a29;
+    left:0;
+    margin-top: -45px;
+    width: 100%;
+    height: 0.3px;
+    z-index: 1003;
   }
 
   .hamburger-menu.hamburger-menu:has(input:checked)+.sidebar{
+    translate: 0;
+  }
+
+  .cache-noir{
+    position:fixed;
+    top:0;
+    left:0;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    z-index: 1001;
+    opacity: 0.3;
+    translate: -100%;
+  }
+
+  .cache-noir.menu-open {
     translate: 0;
   }
 
@@ -170,32 +206,26 @@ body {
     background-position:center;
     height: 1000px;
   }
-  
-  .trajet-title{
-    position: absolute;
-    margin-top: 70px;
-    max-width: 90%;
-    left:50%;
-    transform: translate(-50%, 0);
-    text-align: center;
-    color: rgb(0, 0, 0);
-    background-color: #c5c5c5ba;
-    width: 100%;
-    font-size: 40px;
-  }
 
   .trajet-details{
     position: absolute;
+    padding-top: 70px;
+    padding-left: 5px;
+    height: 100%;
+    left: 0;
     display: flex;
     flex-direction: column;
-    margin-top: 200px;
-    width: 40%;
+    width: 300px;
     color: rgb(0, 0, 0);
-    margin-left: 5px;
     background-color: rgba(213, 213, 213, 0.727);
     text-decoration: none;
   }
 
+  .trajet-title{
+    font-weight: bold;
+    text-align: center;
+    margin-top: 2px;
+  }
   .trajet-depart{
     font-weight: bold;
   }
@@ -203,28 +233,30 @@ body {
     font-weight: bold;
     margin-top: 3px;
   }
-  .trajet-durée{
-    position: relative;
-    margin-top: 3px;
-    font-style: italic;
-  }
+
   .trajet-distance{
     position: relative;
+    margin-top: 2px;
+  }
+
+  .trajet-durée1{
+    position: relative;
+    margin-top: 2px;
+    margin-bottom: 10px;
+  }
+  .trajet-durée2{
+    position: relative;
     margin-top: -10px;
+    margin-left: 5px;
+    font-size: small;
     font-style: italic;
   }
 
   .trajet-prix{
     position: relative;
-    margin-top: -10px;
-    font-style: italic;
+    margin-top: 2px;
   }
-    .trajet-emissionsCO2{
-    position: relative;
-    margin-top: -10px;
-    font-style: italic;
-  }
-  
+
   .trajet-button{
     position:relative;
     text-decoration: none;
@@ -242,22 +274,32 @@ body {
     border-radius: 40px;
   }
 
+  .musique{
+    position: absolute;
+    padding-top: 5px;
+    padding-left: 5px;
+    height: 100%;
+    top: 430px;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+  }
 
-
-  /* .Bienvenue {
+  .musique h3{
+    font-weight: bold;
+    text-align: center;
+    margin-top: 2px;
+  }
+  
+  .Trajet{
       transition: var(--animation-timing);
   }
-  .Bienvenue.menu-open {
-    transform: translateX(20%);
+  .Trajet.menu-open {
+    transform: translateX(calc(100vw*0.175));
   }
-
-  div.content {
-    transition: var(--animation-timing);
-  }
-  .content.menu-open {
-    transform: scale(1) translateX(calc(var(--shape-width)*0.5));
-
-}
 
 
 
