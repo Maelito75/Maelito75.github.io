@@ -197,8 +197,8 @@ body {
   /*Section BIENVENUE */
   section.Bienvenue {
     z-index: 0;
-    position:relative;
-    z-index: 999;
+    position:absolute;
+    z-index: 1000;
     margin: 0;
     top:60px;
     display: flex;
@@ -259,7 +259,7 @@ body {
   .texte {
     position: absolute;
     margin: 0;
-    bottom: -20%;
+    bottom: 0;
     text-align: center;
     max-width: 60%;
   }
