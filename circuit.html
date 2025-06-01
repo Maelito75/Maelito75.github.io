@@ -5,6 +5,24 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Triathlon Ardèche - Supportons Salomé et Madeline</title>
         <link rel="stylesheet" href="css/circuit.css">
+
+        <style>
+            @keyframes appear{
+                from{
+                    opacity: 0 ;
+                    scale: 0.5;
+                }
+                to{
+                    opacity: 1;
+                    scale: 1;
+                }
+            }
+            .navbar2{
+                animation: appear linear;
+                animation-timeline: view();
+                animation-range:entry 0% cover 30%;
+            }
+        </style>
     </head>
 
     <body>
@@ -31,86 +49,159 @@
             <a class="cache-noir"></a>
 
             <section class="circuit-triathlon">
-                <div class="circuit c-natation">
-                    <div class="type natation">
-                        <h2> Parcours Natation</h2>
-                        <img src="Images/Parcours natation.png" alt="Parcours natation">
-                        <a class="bikemap-link" href="https://www.bikemap.net/en/r/3963087/?utm_source=website&utm_medium=route_widget&utm_campaign=widget_route_title">Voir le parcours sur Bikemap</a>
+                <div class="content1 Timer">
+                    <div class="timebox">
+                        <div class="time">
+                            <h2 id="days">00</h2>
+                            <p>Jours</p>
+                        </div>
+                        <div class="time">
+                            <h2 id="hours">00</h2>
+                            <p>Heures</p>
+                        </div>
+                        <div class="time">
+                            <h2 id="minutes">00</h2>
+                            <p>Minutes</p>
+                        </div>
+                        <div class="time">
+                            <h2 id="seconds">00</h2>
+                            <p>Secondes</p>
+                        </div>
                     </div>
-                    
-                    <div class="circuit-details">
-                        <div class="circuit-distance">
-                            <a class="légende">Distance</a>
-                            <a class="valeur">1000m</a>
+                </div>
+                <div class="button-swipe">
+                    <button class="pre-btn"><img src="/Images/Arrow swipe.png" alt="arrow swipe"></button>
+                    <button class="nxt-btn"><img src="/Images/Arrow swipe.png" alt="arrow swipe"></button>
+                </div>
+                <div class="slider">
+                    <div id="natation" class="circuit c-natation">
+                        <div class="type natation">
+                            <iframe id="bikemap-natation" src="https://www.bikemap.net/en/r/3963087-tga2018-parcours-natation-dist-m/widget/?;unit=metric" border="0" frameborder="0" marginheight="0" marginwidth="0" scrolling="no"> </iframe>
                         </div>
-                        <div class="circuit-température">
-                            <a class="légende">Température</a>
-                            <a class="valeur">Rafraichissante</a>
+                        <p>Vers 19h30, depuis le moulin de St Martin, les athlètes plongeront dans l’Ardèche pour une première longueur de 500m. Une sortie sur le sable puis un ultime plongeon avant d'avaler les 500m restants.<br> Ambiance estivale, éclaboussures… et risques élevés de nager derrière des orteils douteux.</p>
+                        <div class="circuit-details">
+                            <div class="circuit-distance">
+                                <a class="légende">Distance</a>
+                                <a class="valeur">1000m</a>
+                            </div>
+                            <div class="circuit-température">
+                                <a class="légende">T° de l'eau</a>
+                                <a class="valeur">:)</a>
+                            </div>
+                            <div class="circuit-horaire">
+                                <a class="légende">Horaire</a>
+                                <a class="valeur">Fin de journée</a>                      
+                            </div>
+                            <div class="circuit-style">
+                                <a class="légende">Style vestimentaire</a>
+                                <a class="valeur">2/10</a>
+                            </div>
+                            <div class="circuit-risque">
+                                <a class="légende">Risque majeur</a>
+                                <a class="valeur">Coup de peton</a>
+                            </div>
+                            <div class="circuit-sectateur">
+                                <a class="légende">Supporter</a>
+                                <a class="valeur">Vision idéale</a>
+                            </div>
                         </div>
-                        <div class="circuit-courant">
-                            <a class="légende">Courant</a>
-                            <a class="valeur">Beaucoup trop</a>
+                    </div>
+                    <div id="velo" class="circuit c-velo">
+                        <div class="type velo">
+                            <iframe id="bikemap-natation" src="https://www.bikemap.net/en/r/4697330/widget/?extended=1&unit=metric" border="0" frameborder="0" marginheight="0" marginwidth="0" scrolling="no"> </iframe>
+                        </div>
+                        <p>Après un petit coup de serviette express, direction la selle pour avaler les virages de la route touristique des Gorges de l’Ardèche. Avec le coucher de soleil en fond, les 420 mètres de dénivelé auront un goût de pneu crevé (miam).<br> Attention, on ne coupe pas les spaghettis, et à 21h15 on allume les lumières de l'espoir.</p>
+                        <div class="circuit-details">
+                            <div class="circuit-distance">
+                                <a class="légende">Distance</a>
+                                <a class="valeur">35km (420 D+)</a>
+                            </div>
+                            <div class="circuit-température">
+                                <a class="légende">Température</a>
+                                <a class="valeur">Parfaite</a>
+                            </div>
+                            <div class="circuit-horaire">
+                                <a class="légende">Horaire</a>
+                                <a class="valeur">Crépuscule</a>                      
+                            </div>
+                            <div class="circuit-style">
+                                <a class="légende">Style vestimentaire</a>
+                                <a class="valeur">9/10</a>
+                            </div>
+                            <div class="circuit-risque">
+                                <a class="légende">Risque majeur</a>
+                                <a class="valeur">Reculer en montée</a>
+                            </div>
+                            <div class="circuit-sectateur">
+                                <a class="légende">Supporter</a>
+                                <a class="valeur">Apéro</a>
+                            </div>
+                        </div>                                           
+                    </div>
+                    <div id="course" class="circuit c-course">
+                        <div class="type course">
+                            <iframe id="bikemap-natation" src="https://www.bikemap.net/en/r/16599228/widget/?extended=1&unit=metric" border="0" frameborder="0" marginheight="0" marginwidth="0" scrolling="no"> </iframe>
+                        </div>
+                        <p>Quoi de mieux pour finir qu’une dernière ligne pas droite à la frontale ? Si l’idée de base c’est de courir, le pont de canoës au 2e km et le mur d’escalade avant le 3e vont en faire grimacer plus d’un (qui est le coquin qui a pondu le parcours ?). On serre les dents et on termine en explosion, pour le plus grand plaisir des spectateurs !</p>
+                        <div class="circuit-details">
+                            <div class="circuit-distance">
+                                <a class="légende">Distance</a>
+                                <a class="valeur">7km (139 D+ !!)</a>
+                            </div>
+                            <div class="circuit-température">
+                                <a class="légende">Température</a>
+                                <a class="valeur">On s'en fout</a>
+                            </div>
+                            <div class="circuit-horaire">
+                                <a class="légende">Horaire</a>
+                                <a class="valeur">Nuit</a>                      
+                            </div>
+                            <div class="circuit-style">
+                                <a class="légende">Style vestimentaire</a>
+                                <a class="valeur">On s'en fout</a>
+                            </div>
+                            <div class="circuit-risque">
+                                <a class="légende">Risque majeur</a>
+                                <a class="valeur">Tomber dans l'eau (2 fois)</a>
+                            </div>
+                            <div class="circuit-sectateur">
+                                <a class="légende">Supporter</a>
+                                <a class="valeur">L'euphorieeeee</a>
+                            </div>
                         </div>  
-                        <div class="circuit-horaire">
-                            <a class="légende">Horaire</a>
-                            <a class="valeur">Fin de journée</a>                      
-                        </div>
                     </div>
+                   <div class="slider-nav2">
+                        <a href="#natation">🏊‍♂️<br>NATATION</a>
+                        <a href="#velo">🚴‍♀️<br>VELO</a>
+                        <a href="#course">🏃‍♀️<br>CAP</a>
+                    </div>           
                 </div>
-                <div class="circuit velo">
-                    <div class="type velo">
-                        <h2> Parcours Velo</h2>
-                        <img src="Images/Parcours velo.png" alt="Parcours velo">
-                        <a class="bikemap-link" href="https://www.bikemap.net/en/r/4697330/?utm_source=website&utm_medium=route_widget&utm_campaign=widget_route_title">Voir le parcours sur Bikemap</a>                    
-                    </div>
-                    <div class="circuit-details">
-                        <div class="circuit-distance">
-                            <a class="légende">Distance</a>
-                            <a class="valeur">35km</a>
-                        </div>
-                        <div class="circuit-température">
-                            <a class="légende">Dénivelé positif</a>
-                            <a class="valeur">422m</a>
-                        </div>
-                        <div class="circuit-courant">
-                            <a class="légende">Température</a>
-                            <a class="valeur">Parfaite</a>
-                        </div>
-                            <div class="circuit-horaire">
-                            <a class="légende">Horaire</a>
-                            <a class="valeur">Crépuscule</a>
-                        </div>                      
-                    </div>
-                </div>
-                <div class="circuit course">
-                    <div class="type course">
-                        <h2> Parcours Course</h2>
-                        <img src="Images/Parcours course.png" alt="Parcours course">
-                        <a class="bikemap-link" href="https://www.bikemap.net/en/r/16599228/?utm_source=website&utm_medium=route_widget&utm_campaign=widget_route_title">Voir le parcours sur Bikemap</a>
-                    </div>
-                    <div class="circuit-details">
-                        <div class="circuit-distance">
-                            <a class="légende">Distance</a>
-                            <a class="valeur">7km</a>
-                        </div>
-                        <div class="circuit-température">
-                            <a class="légende">Dénivelé positif</a>
-                            <a class="valeur">139m</a>
-                        </div>
-                        <div class="circuit-courant">
-                            <a class="légende">Température</a>
-                            <a class="valeur">Parfaite</a>
-                        </div>
-                            <div class="circuit-horaire">
-                            <a class="légende">Horaire</a>
-                            <a class="valeur">Nuit</a>
-                        </div>                      
-                    </div>
-                </div>
+
             </section>
 
         <!-- </header> -->
         <script src="menu.js" defer></script>
+        <script src="script.js" defer></script>
+        <script src="swipe-button.js" defer></script>
+        <script>
+            const circuit = document.querySelectorAll(".circuit");
+            const links = document.querySelectorAll(".slider-nav2 a");
+
+            const observer = new IntersectionObserver(entries => {
+                entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const id = entry.target.getAttribute("id");
+                    links.forEach(link => {
+                    link.classList.toggle("active", link.getAttribute("href") === `#${id}`);
+                    });
+                }
+                });
+            }, {
+                threshold: 0.2  // déclenche quand 50% visible
+            });
+
+            circuit.forEach(div => observer.observe(div));
+        </script>
 
     </body>
 </html>

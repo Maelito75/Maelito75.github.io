@@ -5,10 +5,28 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Triathlon Ardèche - Supportons Salomé et Madeline</title>
         <link rel="stylesheet" href="css/styles.css">
+
+        <style>
+            @keyframes appear{
+                from{
+                    opacity: 0 ;
+                    scale: 0.5;
+                }
+                to{
+                    opacity: 1;
+                    scale: 1;
+                }
+            }
+            .content1{
+                animation: appear linear;
+                animation-timeline: view();
+                animation-range:entry 0% cover 30%;
+            }
+        </style>
     </head>
 
     <body>
-        <header class="header">
+        <header>
             <span class="bandeau">
                 <a href="index.html">
                     <img id="logo-img" src="Images/logo.png" alt="Logo du site">
@@ -29,35 +47,32 @@
                 </nav>
             </aside>
             <a class="cache-noir"></a>
-
-            <section class="Bienvenue">
-                <div class="Timer">
-                    <div class="timebox">
-                        <div class="time">
-                            <h2 id="days">00</h2>
-                            <p>Jours</p>
-                        </div>
-                        <div class="time">
-                            <h2 id="hours">00</h2>
-                            <p>Heures</p>
-                        </div>
-                        <div class="time">
-                            <h2 id="minutes">00</h2>
-                            <p>Minutes</p>
-                        </div>
-                        <div class="time">
-                            <h2 id="seconds">00</h2>
-                            <p>Secondes</p>
-                        </div>
-                    </div>
+        </header>
+        <section class="Bienvenue">
+            <div class="fond-gif">
+            </div>
+            <div class="content">
+                <div class="content1 texte">
+                    <h2 class="content1 Debut">Bienvenue <br>sur le site du</h2>
+                    <h2 class="content1 Fin">SM FAN CLUB <br>2025</h2>
                 </div>
-                <span class="texte">
-                    <h2 id="Début">Bienvenue sur le site du</h2>
-                    <h2 id="Fin">SM FAN CLUB 2025</h2>
-            </section>
-        <!-- </header> -->
+                <div class="content1 Bulles"> 
+                    <a class="b-circuit" href="circuit.html">
+                        <img src="/Images/Logo circuit.png">
+                    </a>   
+                    <a class="b-airbnb" href="rbnb.html">
+                        <img src="/Images/Logo Airbnb.png">
+                    </a>
+                    <a class="b-trajet" href="trajet.html">
+                        <img src="/Images/Logo Itinéraire.png">
+                    </a>
+                    <a class="b-supporter" href="supporter.html">
+                        <img src="/Images/Logo supporter.png">
+                    </a>
+                </div>
+            </div>
+        </section>
         <script src="menu.js" defer></script>
-        <script src="script.js" defer></script>
 
     </body>
 </html>
