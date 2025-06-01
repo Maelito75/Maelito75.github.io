@@ -211,6 +211,7 @@ body {
         display: flex;
         flex-direction: column;
         margin-bottom: 20px;
+        height: 150vh;
     }
     /* MINUTEUR */
     div.Timer {
@@ -389,6 +390,7 @@ body {
       display: flex;
       flex-direction: column;
       margin-bottom: 20px;
+      height: 150vh;
     }
     /* MINUTEUR */
     div.Timer {
