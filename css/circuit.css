@@ -211,7 +211,7 @@ body {
         display: flex;
         flex-direction: column;
         margin-bottom: 20px;
-        height: 150vh;
+        /* height: 150vh; */
     }
     /* MINUTEUR */
     div.Timer {
@@ -258,7 +258,7 @@ body {
   /* SLIDER CIRCUITS */
     .slider{
       padding-top: 20px;
-      height: 100vh;
+      height: auto;
       display: flex;
       overflow-x: auto;
       scroll-snap-type: x mandatory;
@@ -271,7 +271,7 @@ body {
       scroll-snap-align: start;
       object-fit: cover;
       object-position: center;
-      overflow: hidden;
+      overflow-y: auto;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -390,7 +390,7 @@ body {
       display: flex;
       flex-direction: column;
       margin-bottom: 20px;
-      height: 150vh;
+      /* height: 150vh; */
     }
     /* MINUTEUR */
     div.Timer {
